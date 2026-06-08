@@ -3,8 +3,9 @@ from odoo.http import request
 import json
 class OrderController(http.Controller):
     """
-        Use Case 2 - Logique métier
+        Use Case 2 & 4- Logique métier | Performance & concurrence
         Depends on test sale_order and order_service models to create an order to buy several products
+
     """
 
     @http.route('/api/orders', type='json', auth='none', methods=['POST'], csrf=False)
